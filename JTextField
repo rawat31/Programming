@@ -1,0 +1,47 @@
+    /*
+            JTextField Columns Example
+            This java example shows how to get or set JTextField columns using
+            Java Swing JTextField class.
+    */
+     
+     
+    import java.awt.FlowLayout;
+     
+    import javax.swing.JApplet;
+    import javax.swing.JTextField;
+     
+    /*
+    <applet code="JTextFieldColumnsExample" width=200 height=200>
+    </applet>
+    */
+     
+    public class JTextFieldColumnsExample extends JApplet{
+     
+            public void init(){
+                   
+                    //set flow layout for the applet
+                    this.getContentPane().setLayout(new FlowLayout());
+                   
+                    //create new JTextField
+                    JTextField field = new JTextField("JTextField Columns Example");
+                   
+                    /*
+                     * To set columns for JTextField use,
+                     * void setColumns(int columns)
+                     * method of JTextField class.
+                     */
+                   
+                    field.setColumns(20);
+                   
+                    /*
+                     * To get current columns of JTextField use,
+                     * int getColumns()
+                     * method of JTextField class.
+                     */
+                   
+                    int columns = field.getColumns();
+                   
+                    add(field);
+                   
+            }
+    }
